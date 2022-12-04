@@ -1,0 +1,40 @@
+<view>
+    <image class="top-theme" src="{{themeA.entrance_img}}"></image>
+    <swiper class="swiper"
+            indicator-dots
+            indicator-active-color="#157658">
+        <block wx:for="{{bannerB.items}}">
+            <swiper-item>
+                <image class="swiper" src="{{item.img}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <s-category-grid grid="{{grid}}"></s-category-grid>
+
+    <s-spu-scroll
+            theme="{{themeE}}"
+            spu-list="{{themeESpu}}"
+            wx:if="{{themeE.online}}">
+
+    </s-spu-scroll>
+
+    <image class="activity" src="{{activityD.entrance_img}}"></image>
+
+
+
+    <image src="{{themeF.entrance_img}}" class="quality"></image>
+
+    <s-hot-list banner="{{bannerG}}"></s-hot-list>
+
+
+    <image src="{{themeH.entrance_img}}" class="fashion"></image>
+
+    <view class="spu-bottom">
+        <image class="title-spu-bottom" src="http://i2.sleeve.talelin.com/m4.png"></image>
+        <l-water-flow  generic:l-water-flow-item="s-spu-preview"></l-water-flow>
+    </view>
+
+
+
+</view>
